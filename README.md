@@ -19,4 +19,10 @@ A simple and responsive web app that lets you search for recipes, view ingredien
 1. Clone the repository  
 2. Open `index.html` in your browser  
 
+
+🍲 Recipe Finder - Search and discover recipes with ingredients, instructions, and videos.  
+Live Demo: https://droid-a123.github.io/recipe-finder/
+
+
 ---
+
