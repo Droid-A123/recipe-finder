@@ -42,6 +42,14 @@
             transition: background 0.3s;
         }
 
+        button a {
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: bold;
+            z-index: 1;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
         header button:hover {
             background: #555;
         }
@@ -66,8 +74,9 @@
         #menuToggle {
             display: none;
             position: fixed;
+            max-width: 50px;
             top: 20px;
-            left: 20px;
+            left: 10px;
             z-index: 3000;
             background: #1976d2;
             color: white;
@@ -332,4 +341,188 @@
         .youtube-link:hover {
             background: #ff3333;
         }
+
+
+        /* Footer */
+.footer {
+  margin-top: 50px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: center;
+  color: white;
+  padding: 40px 20px;
+  font-family: Poppins, sans-serif;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.footer h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.footer p {
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.socials {
+  margin: 20px 0;
+}
+
+.socials a {
+  color: white;
+  margin: 0 10px;
+  font-size: 1.3rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.socials a:hover {
+  color: #ffb347;
+  transform: scale(1.2);
+}
+
+.copyright {
+  font-size: 0.85rem;
+  opacity: 0.8;
+  margin-top: 15px;
+}
+
+/* Subtle animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== RESPONSIVE MEDIA QUERIES ===== */
+
+/* Tablets and smaller laptops */
+@media screen and (max-width: 1024px) {
+  .container {
+    margin: 15px;
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: clamp(1.3rem, 3.5vw, 2rem);
+  }
+
+  h1 img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .food {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+  }
+
+  .food img {
+    max-width: 350px;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+  }
+
+  p {
+    font-size: 18px;
+    max-width: 100%;
+  }
+
+  .recipe-card {
+    width: 280px;
+  }
+}
+
+/* Mobile devices */
+@media screen and (max-width: 768px) {
+  body {
+    background: linear-gradient(180deg, #8B0000 0%, #FF0000 50%, #FF4500 100%);
+  }
+
+  .container {
+    margin: 10px;
+    padding: 15px;
+  }
+
+  h1 {
+    flex-direction: column;
+    font-size: 1.5rem;
+  }
+
+  h1 img {
+    width: 70px;
+    height: 70px;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  button {
+    padding: 15px 30px;
+    font-size: 18px;
+    width: 90%;
+    max-width: 300px;
+  }
+
+  button::before {
+    left: 10px;
+    font-size: 20px;
+  }
+
+  .food {
+    padding: 10px;
+    gap: 10px;
+  }
+
+  .food img {
+    max-width: 300px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+  }
+
+  p {
+    font-size: 16px;
+    padding: 15px 10px;
+  }
+
+  .meaw {
+    padding: 30px 15px;
+    gap: 15px;
+  }
+
+  .recipe-card {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .footer {
+    padding: 30px 15px;
+  }
+
+  .footer h2 {
+    font-size: 1.5rem;
+  }
+
+  .footer p {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  .socials a {
+    font-size: 1.2rem;
+    margin: 0 8px;
+  }
+}
 

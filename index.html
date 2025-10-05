@@ -2,65 +2,96 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="img/logo.jpeg" type="image/x-icon">
+    <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Recipe Finder</title>
-    <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="home.css">
 </head>
 <body>
-    <header>
-        <h1>
-            <span style="font-size: 4rem;"><img src="img/logo.jpeg" alt="logo"></span> Personal Chef
-        </h1>
-        <input type="text" id="searchBox" placeholder="Search for a recipe...">
-        <button id="searchBtn">Search</button>
-    </header>
-
-    <!-- Mobile Menu Toggle -->
-    <button id="menuToggle" aria-label="Toggle menu">☰</button>
-
-    <!-- Sidebar Overlay for mobile -->
-    <div class="sidebar-overlay" id="sidebarOverlay"></div>
-
-    <div class="layout">
-        <!-- Sidebar with food suggestions -->
-        <aside id="sidebar">
-            <h2>🍴 Suggestions</h2>
-            <ul>
-                <li class="suggestion">Pizza</li>
-                <li class="suggestion">Pasta</li>
-                <li class="suggestion">Chicken</li>
-                <li class="suggestion">Salad</li>
-                <li class="suggestion">Soup</li>
-                <li class="suggestion">Burger</li>
-                <li class="suggestion">Sushi</li>
-                <li class="suggestion">Tacos</li>
-                <li class="suggestion">Dumplings</li>
-                <li class="suggestion">Paella</li>
-                <li class="suggestion">Steak</li>
-                <li class="suggestion">Sandwich</li>
-                <li class="suggestion">Curry</li>
-                <li class="suggestion">Fish & Chips</li>
-                <li class="suggestion">Shrimp</li>
-            </ul>
-        </aside>
-
-        <!-- Main recipe results -->
-        <main id="recipeContainer">
-            <!-- Recipes appear here -->
-        </main>
+    <div class="container">
+         <h1><img src="img/logo.jpeg" alt="logo">Welcome to Chief Chef Recipe Finder</h1>
+        <p>Your go-to platform for delicious recipes and cooking tips!</p>
     </div>
 
-    <!-- Recipe Modal -->
-    <div id="recipeModal" class="modal" aria-hidden="true">
-        <div class="modal-content">
-            <button id="modalClose" class="modal-close" aria-label="Close modal">✕</button>
-            <div id="modalBody"></div>
+    <button><a href="search.html">Search</a></button>
+
+    <div class="food">
+        <img src="img/burger,soda chips.jpeg" alt="foods" max-width="600px" height="400px">
+        <p>Discover delicious meals made easy! Our Recipe Finder helps you explore everything from quick weekday dinners to mouth-watering desserts. Each recipe includes clear step-by-step instructions, ingredient lists, and cooking tips — perfect for both beginners and pros who love good food.</p>
+    </div>
+
+    <div class="food">
+        <p>Every meal in our Recipe Finder is crafted to inspire your taste buds. Whether it’s a creamy pasta, spicy stew, or a refreshing smoothie, we’ve included detailed cooking methods and serving suggestions. You can also explore vegetarian, vegan, and gluten-free options tailored to your preferences.</p>
+        <img src="img/spree-burger.jpeg" alt="foods" max-width="600px" height="400px">
+    </div>
+
+    <div class="food">
+        <img src="img/Stir-Fried Noodles with Bell Peppers and Green Onions, Served in a White Bowl with a Transparent Background.jpeg" alt="foods" max-width="600px" height="400px">
+        <p>Cooking is more than just mixing ingredients — it’s creating moments. Our collection brings together recipes from around the world, each with a story behind it. From Kenyan pilau rich with spices to classic Italian lasagna layered with love, every dish tells its own delicious tale.</p>
+    </div>
+
+    <section class="meaw">
+
+        <div class="recipe-card">
+            <img src="img/mezaa1.jpeg" alt="Pasta Dish">
+                <div class="recipe-info">
+                    <h2>Global Recipes</h2>
+                        <p>From global to your kitchen bringing a lovish taste in every bite!</p>
+                </div>
         </div>
-        <div class="modal-backdrop" id="modalBackdrop"></div>
+
+        <div class="recipe-card">
+            <img src="img/meza3.jpeg" alt="Pasta Dish">
+                <div class="recipe-info">
+                    <h2>Simple Recipes</h2>
+                        <p>Made to the best of simple for better understanding!</p>
+                </div>
+        </div>
+
+        <div class="recipe-card">
+            <img src="img/meza2.jpeg" alt="Pasta Dish">
+                <div class="recipe-info">
+                    <h2>Tasty Tutorials</h2>
+                        <p>Easy to follow up to providing a tasty and lovish meal!</p>
+                </div>
+        </div>
+
+        <div class="recipe-card">
+            <img src="img/rounddish chicken rice.jpeg" alt="Pasta Dish">
+                <div class="recipe-info">
+                    <h2>Different Dishes</h2>
+                        <p>Making sure yopu have a variety of dishes to explore and taste!</p>
+                </div>
+        </div>
+
+        
+
+    </section>
+
+    <button><a href="search.html">Search</a></button>
+
+    <footer class="footer">
+  <div class="footer-content">
+    <h2>Recipe Finder</h2>
+    <p>Discover new meals, cook with love, and share the joy of food with everyone.</p>
+
+    <div class="socials">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
     </div>
 
-    <script src="script.js"></script>
+    <p class="copyright">
+      &copy; 2025 Recipe Finder | XvlAlvin 
+    </p>
+  </div>
+</footer>
+
+<!-- Font Awesome (for social icons) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    
+    
 </body>
 </html>
+
